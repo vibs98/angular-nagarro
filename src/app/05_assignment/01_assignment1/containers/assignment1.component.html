@@ -8,6 +8,14 @@
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    <div class="form-group">
+      <h6 class="display-4">Enter input:</h6>
+
+      <!--Template Reference Variable-->
+      <input class="form-control" type="text" #inputElement (input)="display(inputElement)" placeholder="Anything random ">
+      <br>
+
+      <p>You entered : <b>{{userInput}}</b></p>
+    </div>
   </div>
 </div>

@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Assignment1Component {
 
+  userInput: String = "";
+
+  display(inputElement: HTMLInputElement) {
+    //console.log(inputName.value);
+    this.userInput = inputElement.value;
+  }
 }
+
